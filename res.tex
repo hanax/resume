@@ -1,0 +1,167 @@
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, centered]{res}
+
+\hypersetup{backref,pdfpagemode=Full,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\bf}
+
+\newcommand{\sectiontitle}{\sc}
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Yiqing (Hannah) Xue}
+
+%this is right aligned
+\address{
+yxue.me \textbar\ yx348@cornell.edu \textbar\ +1 (646) 245-7152
+}
+
+\begin{resume}
+
+\vspace{25pt}
+
+\section{\sectiontitle{About}}
+
+Creative techie. Front-end and mobile developer. Self-taught designer. Visual Animal. 
+
+
+\section{\sectiontitle{Education}}
+
+\textbf{Cornell Tech}, New York, NY \hfill 2015--present \\
+\textsl{M.S. in Information Systems, Connective Media} \\
+Selected Courses: Startup Systems Design and Engineering, Applied Machine Learning, Master of Engineering Project, Independent Study (on Human-Computer Interaction).
+
+\textbf{Peking University}, Beijing, China \hfill 2011--2015 \\ 
+\textsl{B.S. in Computer Science with Honors and Scholarships}\\
+Received 2014 Google China Anita Borg Scholarship (Only one in the department). \\
+Selected Courses: Computer Networks (Honor Track), Operating Systems (Honor Track), Compilers, Web Software Technology, Human-Computer Interaction.
+
+\textbf{Peking University}, Beijing, China \hfill 2012--2015 \\ 
+\textsl{B.S. in Psychology}\\
+Selected Courses: Social Psychology, Cognitive Psychology, Experimental Psychology.
+% , Computer Architecture, Software Engineering
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \title{l}\\
+  % \location{l}
+  \body\\
+\end{formatb}
+
+
+\section{\sectiontitle{Employment}}
+
+\employer{\textbf{Baidu Research}, Beijing, China}
+\title{\textsl{Research Intern} (OpenCV on Android)}
+\dates{2015}
+\begin{position}
+Worked for the Human-Computer Interaction team at Baidu Institute of Deep-Learning. \\
+Designed and built a high-fidelity prototype with natural user interfaces on tablets for a smart home hardware.
+\end{position}
+
+\employer{\textbf{Google}, Mountain View, CA}
+\title{\textsl{Software Engineering Intern} (Google Web Toolkit, Android)}
+\dates{2014}
+\begin{position}
+Implemented a new ads feature which enables advertisers to copy multiple ads asynchronously from existing ad groups directly from a table.\\
+Worked with designer to prototype an Android app which scans a QR code on Google AdWords website and display multiple mobile ads on app.
+
+\end{position}
+
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%
+
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\sectiontitle{Projects}}
+
+\employer{\textbf{Shake it} (mobile web application \textbar\ Python, Node.js, MongoDB)}
+\dates{2015}
+\begin{position}
+Designed and developed a novel application where users could shake their phones to get coupons, which they could then star and share. The system is able to learn from user behaviors and perform better. 
+Demo and paper available upon request.
+\end{position}
+
+\employer{\textbf{2D Barcode Redesign} (OpenCV on desktop and Android)}
+\dates{2013-2014}
+\begin{position}
+Created and prototyped a redesign of scalable 2D barcode for wireless visual communication. Collaborated with Microsoft Research Asia and Yale University. Paper accepted by ACM MobiCom 2014 (Acceptance Rate 16.4\%).
+\end{position}
+
+\employer{\textbf{FYI: Find Your Instructor} (web application \textbar\ D3.js, Node.js, MongoDB)}
+\dates{2014}
+\begin{position}
+The website provides gathered information of US professors for undergraduates who aim at further education. Designed and prototyped the entire website. Developed part of the front-end and back-end. 
+\end{position}
+
+% \employer{\textbf{Co.found} (mobile web application \textbar\ AngularJS, Node.js, MongoDB)}
+% \dates{2014}
+% \begin{position}
+% \textsl{\href{https://co-found.herokuapp.com}{co-found.herokuapp.com}}\\
+% Cofounder networking platform for Stanford community. UI+UX design and front-end dev.
+% % Went through the entire design process of ideation, user study, rapid prototyping, user testing, etc.
+% \end{position}
+
+% \employer{\textbf{Visualization of Beijing Air Pollution} (visualization \textbar\ D3.js)}
+% \dates{2012}
+% \begin{position}
+% \textsl{\href{http://scottcheng.github.com/bj-air-vis}{scottcheng.github.com/bj-air-vis}}\\
+% Interactive visualization illustrating Beijing air pollution in time and space.
+% \end{position}
+
+\section{\sectiontitle{Skills}}
+Java (Android), JavaScript, Python, \Cplusplus, HTML5, CSS3, Git.\\
+UI+UX design.
+
+\section{\sectiontitle{Interests}}
+Graphic design, illustrating, fashion (Spent a summer at Parsons learning fashion). \\
+Indie music. Tai-chi (Certified National Athlete).
+
+\end{resume}
+\end{document}
